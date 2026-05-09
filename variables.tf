@@ -67,10 +67,10 @@ variable "private_route_table_tags" {
   default = {}
 }
 
-# variable "database_route_table_tags" {
-#   type    = map(string)
-#   default = {}
-# }
+variable "database_route_table_tags" {
+  type    = map(string)
+  default = {}
+}
 
 variable "is_peering_required" {
   default = false
