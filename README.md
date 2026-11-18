@@ -69,7 +69,7 @@ module "vpc" {
 ## Design notes
 
 - **One NAT Gateway** keeps costs low for dev environments. For production, one NAT Gateway per AZ removes the single point of failure.
-- #Database subnets get their own route table, so their routing can be restricted separately from the application tier.
+- Database subnets get their own route table, so their routing can be restricted separately from the application tier.
 - #Peering to the default VPC lets tools running there (for example a Jenkins or Ansible server) reach the new VPC privately.
 
 ## Requirements
